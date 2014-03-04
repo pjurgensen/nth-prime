@@ -1,5 +1,5 @@
 require("rspec")
-require("prime_sifting")
+require("nth_prime")
 
 describe("prime_sifting") do
   it("it creates an array of numbers from 2 to inputted number") do
@@ -11,5 +11,10 @@ describe("prime_sifting") do
   end  
 end
 
+describe("nth_prime") do
+  it("returns the nth prime number") do
+    nth_prime(3).should(eq(5))
+  end  
+end
 
 
